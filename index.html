@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ritik Gupta Portfolio</title>
+  </head>
+  <style>
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto,auto);
+      grid-auto-rows: minmax(150px,auto);
+      gap:2px;
+      grid-template-areas: 
+      "header nav nav nav nav nav"
+      "main main main main main main"
+      "main main main main main main"
+      "section section section section section section"
+      "cr cr cr cr cr cr"
+      "footer footer footer footer footer footer"
+          }
+    .container>*{
+       padding: 30px;
+    }
+    header{
+      grid-area: header;
+    }
+   nav{
+    grid-area: nav;
+   }
+   main{
+    grid-area:main;
+    background-color: blanchedalmond;
+   }
+   section{
+    grid-area:section;
+   }
+   cr{
+    grid-area: cr;
+   }
+  footer{
+    grid-area:footer;
+    background-color: lightgray;
+  }
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    list-style-type: none;
+    flex-wrap: wrap;
+  }
+  .header h3:hover{
+  background-color: rgb(234, 206, 206);
+  }
+  .header h3{
+    padding-left: 15px;
+    width: 80%;
+  }
+  body{
+    margin: 0px;
+    padding: 0px;
+  }
+  .text{
+          float: right;
+          margin-left: 60px;
+        }
+        .image{
+          width: 20%;
+          margin-right: 10px ;
+          width: 150px;
+        }
+        .image img{
+          height: 150px;
+          width: 150px;
+          border-radius: 80%;
+        }
+        .main1{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        button {
+            
+            padding: 9px 12px;
+            border-radius: 15px;
+            background-color: rgb(89, 61, 248);
+            color: rgb(243, 236, 236);
+            border: none;
+            cursor: pointer;
+        }
+ 
+        button:hover {
+            background-color: rgb(219, 221, 81);
+            color: black;
+        }
+        .navbar li a:hover {
+  background-color: rgb(234, 206, 206);
+}
+
+.navbar li a {
+  display: block;
+  text-align: center;
+  padding: 0px 15px 0px 15px;
+  text-decoration: none;
+  color: #111;
+  flex-wrap: wrap;
+}
+        .education table{
+          height: 200px;
+          width: 80%;
+          text-align: center;
+          border: none;
+        }
+        .Technical li{
+          padding: 5px;
+        }
+        .NonTechnical li{
+          padding: 5px;
+        }
+        .skills{
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          list-style-type: none;
+          margin-left: 300px;
+          width: 42%;
+          flex-wrap: wrap;
+         }
+         .caption{
+          justify-content: center;
+          text-align: center;
+          padding-top: 5px;
+          font-weight: bold;
+         }
+         .caption h2{
+          background-color: lightgreen;
+          margin-left: 170px;
+          margin-right: 170px;
+          border-radius: 20px;
+         }
+         .sk{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 80px;
+          flex-wrap: wrap;
+         }
+         .footer{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+         }
+         .contact{
+          margin-left: 300px;
+         }
+         .follow a{
+          padding: 5px;
+         }
+         .contact input{
+          padding: 2px;
+          border-radius: 5px;
+         }
+         .education h2{
+          background-color: lightgray;
+          margin-left: 300px;
+          margin-right: 300px;
+          border-radius: 20px;
+         }
+         .certificate img{
+          height: 300px;
+          width: 450px;
+          border-radius: 20px;
+         }
+         .certificate{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 25px;
+         }
+         
+  </style>
+  <body>
+    <div class="container">
+    <header>
+      <div class="header">
+      <h3>Welcome To My Portfolio</h3>
+    </div>
+    </header>
+    <nav>
+      <div class="navbar">
+            <li><a href="#home"><h4>Home</h4></a></li>
+            <li><a href="#about me"><h4>About</h4></a></li>
+            <li><a href="#education"><h4>Education</h4></a></li>
+            <li><a href="#skills"><h4>Skills</h4></a></li>
+            <li><a href="#contact"><h4>Contact</h4></a></li>
+      </div>
+</nav>
+
+<main>
+  <div class="main1">
+              <div class="image">
+          <img src="profile.jpg" alt="profile">
+        </div>
+<div class="text">
+        <h2>Ritik Gupta</h2>
+  <h3>Full Stack Developer</h3>
+  <a href="https://drive.google.com/file/d/1znWkJFaZqTyPTdC1sCJu9ijkF9EBocJl/view?usp=drive_link"><button>Resume</button></a>
+</div>
+  </div>
+  <div class="main2">
+    <div class="about">
+        <h2>About Me</h2>
+    <p>As a full stack developer I have some experience of front end such as HTML,CSS,JavaScript and back end as well like Java(Core and Advance)</p>
+</div>
+  </div>
+</main>
+
+<section>
+  <div class="section">
+            <div class="education">
+        <table border="2px solid black" align="center">
+    <caption><h2>Education Details</h2></caption>
+    <tr>
+      <th>Degree</th>
+      <th>Name of Institute</th>
+      <th>Year</th>
+      <th>CGPA/Percentage</th>
+    </tr>
+    <tr>
+      <td>Master's In Computer Application</td>
+      <td>Institute Of Computer Scinece,Vikram University</td>
+      <td>2022-2024</td>
+      <td>8.54</td>
+    </tr>
+    <tr>
+      <td>Bachelor's In Computer Science</td>
+      <td>Govt.Madhav Science P.G. College,Vikram University</td>
+      <td>2019-2022</td>
+      <td>73.64</td>
+    </tr>
+    <tr>
+      <td>Class XII<sup>th</sup></td>
+      <td>Ujjain Public School,Ujjain(M.P.)</td>
+      <td>2018-2019</td>
+      <td>76.8</td>
+    </tr>
+    <tr>
+      <td>Class X<sup>th</sup></td>
+      <td>Ujjain Public School,Ujjain(M.P.)</td>
+      <td>2016-2017</td>
+      <td>74.16</td>
+    </tr>
+
+  </table><br>
+  </div>
+  <div class="skills">
+    <div class="caption"><h2>Skills</h2></div>
+    <div class="sk">
+  <div class="Technical">
+    <h3>Technical</h3>
+    <li style="background-color: burlywood; border-radius:20px;margin-left: 30px;margin-right: 30px;">C</li><br>
+   <li style="background-color: burlywood; border-radius:20px;margin-left: 30px;margin-right: 30px;">C++</li><br>
+    <li style="background-color: burlywood; border-radius:20px;margin-left: 30px;margin-right: 30px;">HTML</li><br>
+    <li style="background-color: burlywood; border-radius:20px;margin-left: 30px;margin-right: 30px;">CSS</li><br>
+    <li style="background-color: burlywood; border-radius:20px;margin-left: 30px;margin-right: 30px;">JavaScript</li><br>
+    <li style="background-color: burlywood; border-radius:20px;margin-left: 10px;margin-right: 10px;">Java(Core & Advance)<li>
+  </div>
+  <div class="NonTechnical">
+    <h3>Non-Technical</h3>
+    <li style="background-color:burlywood;border-radius: 20px;margin-left: 5px;margin-right: 5px;">Communication</li><br>
+    <li style="background-color:burlywood;border-radius: 20px;margin-left: 2px;margin-right: 2px;">Time Management</li><br>
+    <li style="background-color:burlywood;border-radius: 20px;margin-left: 5px;margin-right: 5px;">Empathy</li><br>
+    <li style="background-color:burlywood;border-radius: 20px;margin-left: 5px;margin-right: 5px;">Teamwork</li><br>
+    <li style="background-color:burlywood;border-radius: 20px;margin-left: 5px;margin-right: 5px;">Problem Solving</li><br>
+    <li style="background-color:burlywood;border-radius: 20px;margin-left: 5px;margin-right: 5px;">Adaptability<li>
+  </div>
+  </div>
+</div>
+  </div>
+</section>
+
+<cr><h2 align="center" style="background-color:darkturquoise;width:15%;border-radius: 20px;margin-left: 430px;">Certificates</h2>
+  <div class="certificate">
+    <div>
+      <img src="c.jpg" style="margin-left:30px; margin-right: 30px;">
+    </div>
+    <div>
+      <img src="web.jpg">
+    </div>
+    <div>
+      <img src="java.jpg" style="margin-left: 300px;margin-right: 300px;">
+    </div>
+  </div>
+</cr>
+
+<footer>
+  <div class="footer">
+    <div class="connect">
+  <h2>Connect with me</h2>
+  <h3>Ritik Gupta</h3>
+  <a href="mailto:gritik1306@gmail.com">gritik1306@gmail.com</a>
+  <h4>9691925050</h4>
+</div>
+<div class="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" name="name" placeholder="enter your full name"><br><br>
+    <input type="email" name="email" placeholder="enter email"><br><br>
+    <input type="text" name="number" placeholder="enter phone number"><br><br>
+    <input type="text" name="message" placeholder="message..."><br><br>
+    <input type="submit" value="submit">
+  </form>
+</div>
+  </div>
+  <div class="follow">
+  <h3>Follow me on</h3>
+  <a href="https://www.linkedin.com/in/ritik-gupta-250a5a240/"><img src="linkedin.png" height="30px" width="30px"></a>
+  <a href="https://github.com/RitikGupta13"><img src="git.png" height="30px" width="30px"></a>
+</div>
+</footer>
+    </div>
+  </body>
+</html>
+<!--
+--->
+
